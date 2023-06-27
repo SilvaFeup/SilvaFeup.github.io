@@ -1,2 +1,2 @@
 # SilvaFeup.github.io
-Portfolio Showcase: Showcasing My Creative Projects
+Hello, This a page showcasing a little bit about me!
