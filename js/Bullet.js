@@ -1,21 +1,19 @@
-export default class Enemy {
-    constructor (x,y,imageNumber){
+export default class Bullet{
+    constructor(canvas,x,y,velocity,bulletColor){
+        this.canvas = canvas;
         this.x = x;
         this.y = y;
-        this.image = new Image();
-        this.width = 16;
-        this.height =8;
+        this.velocity = velocity;
+        this.bulletColor = bulletColor;
 
-        this.image.src = `../images/enemy${imageNumber}.png`;
+        this.width = 2.5;
+        this.height = 5;
     }
 
     draw(ctx){
-        ctx.drawImage(this.image,this.x,this.y,this.width,this.height);
-    }
-
-    move(xVelocity,yVelocity){
-        this.x += xVelocity;
-        this.y += yVelocity;
+        this.y -= this.velocity;
+        ctx.fillStyle = this.bulletColor;
+        ctx.fillRect(this.x,this.y,this.width,this.height);
     }
 
     collideWith(sprite){
