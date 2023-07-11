@@ -109,6 +109,7 @@ body {
     /* Styles for the profile intro */
     font-size: 18px;
     font-family:fantasy;
+    line-height: 3em;
     color: white;
     text-align: center;
 }
