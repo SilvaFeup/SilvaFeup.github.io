@@ -45,6 +45,7 @@ body {
     height: 50px;
     border-radius: 50%;
     border: none;
+    color: white;
 }
     
 .arcade-button.red {
@@ -64,6 +65,8 @@ body {
     
 .arcade-joystick {
     /* Styles for the joystick */
+    color:white;
+    text-align:center;
     width: 100px;
     height: 100px;
     border-radius: 50%;
