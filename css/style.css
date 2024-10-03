@@ -1,225 +1,305 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh; /* Adjust the height as needed */
-    background-color: rgb(0, 0, 33);
-}
-  
-.arcade-console {
-    /* Styles for the Arcade console section */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    border: 10px solid rgb(255, 255, 0);
-    border-radius: 20px;
-    box-shadow: inset 0 0 20px rgb(255, 255, 0);
-}
-    
-.arcade-screen {
-    /* Styles for the Arcade screen section */
-    width: 80%;
-    height: 60%;
-    background-color: rgb(0, 0, 33);
-    border: 5px solid rgb(255, 255, 0);
-    border-radius: 10px;
-}
-    
-.arcade-controls {
-    /* Styles for the Arcade controls section */
-    width: 80%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-    
-.arcade-button {
-    /* Styles for the Arcade buttons */
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    color: white;
-}
-    
-.arcade-button.red {
-    /* Styles for the red button */
-    background-color: rgb(255, 0, 0);
-}
-    
-.arcade-button.green {
-    /* Styles for the green button */
-    background-color: rgb(0, 255, 0);
-}
-    
-.arcade-button.blue {
-    /* Styles for the blue button */
-    background-color: rgb(0, 0, 255);
-}
-    
-.arcade-joystick {
-    /* Styles for the joystick */
-    color:white;
-    text-align:center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: none;
-    background-color: rgb(255, 255, 0);
-}
-  
-.about-me {
-    /* Styles for the about-me section */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 33);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh; /* Adjust the height as needed */
+  background-color: rgb(0, 0, 33);
 }
 
+.arcade-console {
+  /* Styles for the Arcade console section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border: 10px solid rgb(255, 255, 0);
+  border-radius: 20px;
+  box-shadow: inset 0 0 20px rgb(255, 255, 0);
+}
+
+.arcade-screen {
+  /* Styles for the Arcade screen section */
+  width: 80%;
+  height: 60%;
+  background-color: rgb(0, 0, 33);
+  border: 5px solid rgb(255, 255, 0);
+  border-radius: 10px;
+}
+
+.arcade-controls {
+  /* Styles for the Arcade controls section */
+  width: 80%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.arcade-button {
+  /* Styles for the Arcade buttons */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+}
+
+.arcade-button.red {
+  /* Styles for the red button */
+  background-color: rgb(255, 0, 0);
+}
+
+.arcade-button.green {
+  /* Styles for the green button */
+  background-color: rgb(0, 255, 0);
+}
+
+.arcade-button.blue {
+  /* Styles for the blue button */
+  background-color: rgb(0, 0, 255);
+}
+
+.arcade-joystick {
+  /* Styles for the joystick */
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(255, 255, 0);
+}
+
+.about-me {
+  /* Styles for the about-me section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 33);
+  position: relative;
+}
 
 .profile {
-    /* Styles for the profile section */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  /* Styles for the profile section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-    
+
 .profile-photo {
-    /* Styles for the profile photo */
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+  /* Styles for the profile photo */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-    
+
 .profile-name {
-    /* Styles for the profile name */
-    font-size: 36px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 0);
+  /* Styles for the profile name */
+  font-size: 36px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(255, 255, 0);
 }
-    
-.profile-intro {
-    /* Styles for the profile intro */
-    font-size: 18px;
-    font-family:fantasy;
-    line-height: 3em;
-    color: white;
-    text-align: center;
+
+.slide {
+  /* Styles for the profile intro */
+  font-size: 18px;
+  font-family: fantasy;
+  line-height: 3em;
+  color: white;
+  text-align: center;
+  display: none;
+  max-width: 35em;
+}
+
+.current {
+  display: inherit;
 }
 
 .options {
-    /* Styles for the options section */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
+  /* Styles for the options section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
 }
-    
+
 .option {
-    /* Styles for the option buttons */
-    width: 200px;
-    height: 50px;
-    font-size: 24px;
-    color: white;
-    background-color: rgb(0, 0, 33);
-    border: 5px solid rgb(255, 255, 0);
-    border-radius: 10px;
+  /* Styles for the option buttons */
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  color: white;
+  background-color: rgb(0, 0, 33);
+  border: 5px solid rgb(255, 255, 0);
+  border-radius: 10px;
 }
-    
+
 .option:hover {
-    /* Styles for the option buttons on hover */
-    transform: scale(1.1);
+  /* Styles for the option buttons on hover */
+  transform: scale(1.1);
 }
-    
+
 .option.play {
-    /* Styles for the play button */
-    font-family: fantasy;
-    color: white;
+  /* Styles for the play button */
+  font-family: fantasy;
+  color: white;
 }
-    
+
 .option.projects {
-    /* Styles for the projects button */
-    font-family: fantasy;
-    color: white;
+  /* Styles for the projects button */
+  font-family: fantasy;
+  color: white;
 }
-  
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+/* Circle indicators */
+.indicator-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
 
 /*Canvas styling*/
 
 canvas {
-    width: 100%;
-    height: 100%;
-    box-shadow: black 20px 10px 50px;
+  width: 100%;
+  height: 100%;
+  box-shadow: black 20px 10px 50px;
 }
-
 
 /* Media queries for mobile responsiveness */
 @media screen and (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 30em 1fr;
-    }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30em 1fr;
+  }
 
-    .arcade-console {
-        border: 5px solid rgb(255, 255, 0);
-        border-radius: 10px;
-        box-shadow: inset 0 0 10px rgb(255, 255, 0);
-    }
-    
-    .arcade-screen {
-        width: 90%;
-        height: 60%;
-        border: 3px solid rgb(255, 255, 0);
-        border-radius: 8px;
-    }
-    
-    .arcade-controls {
-        width: 90%;
-        height: 15%;
-    }
-    
-    .arcade-button {
-        margin-top: 2em;
-        width: 30px;
-        height: 30px;
-    }
-    
-    .arcade-joystick {
-        margin-top: 2em;
-        width: 45px;
-        height: 45px;
-    }
-    
-    .profile-photo {
-        margin-top: 1em;
-        width: 150px;
-        height: 150px;
-    }
-    
-    .profile-name {
-        font-size: 24px;
-    }
-    
-    .profile-intro {
-        padding-left: 1em;
-        padding-right: 1em;
-        font-size: 16px;
-        line-height: 2.5em;
-    }
-    
-    .option {
-        width: 150px;
-        height: 40px;
-        font-size: 18px;
-    }
+  .arcade-console {
+    border: 5px solid rgb(255, 255, 0);
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgb(255, 255, 0);
+  }
+
+  .arcade-screen {
+    width: 90%;
+    height: 60%;
+    border: 3px solid rgb(255, 255, 0);
+    border-radius: 8px;
+  }
+
+  .arcade-controls {
+    width: 90%;
+    height: 15%;
+  }
+
+  .arcade-button {
+    margin-top: 2em;
+    width: 30px;
+    height: 30px;
+  }
+
+  .arcade-joystick {
+    margin-top: 2em;
+    width: 45px;
+    height: 45px;
+  }
+
+  .profile-photo {
+    margin-top: 1em;
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-name {
+    font-size: 24px;
+  }
+
+  .slide {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 16px;
+    line-height: 2.5em;
+  }
+
+  .option {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  /* Adjusting the buttons for mobile */
+  button.prev,
+  button.next {
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+    padding: 5px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  button.prev {
+    left: 5px; /* Adjust left position */
+  }
+
+  button.next {
+    right: 5px; /* Adjust right position */
+  }
+
+  /* Adjusting the indicator dots for mobile */
+  .indicator-container {
+    bottom: 5px; /* Adjust position from bottom */
+  }
+
+  .dot {
+    height: 8px; /* Adjust dot size */
+    width: 8px; /* Adjust dot size */
+    margin: 0 3px; /* Adjust margin */
+  }
 }

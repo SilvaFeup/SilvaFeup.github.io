@@ -1,59 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <script type="module" src="../js/index.js" defer></script>
-    <link rel="shortcut icon" href="#"/>
+    <link rel="shortcut icon" href="#" />
   </head>
   <body>
     <main>
+      <div class="container">
+        <section class="arcade-console">
+          <div class="arcade-screen">
+            <!-- Space invaders game -->
+            <canvas id="game"></canvas>
+            <div class="options">
+              <button class="option play">Play</button>
+              <a href="https://github.com/SilvaFeup" target="_blank">
+                <button class="option projects">Projects</button>
+              </a>
+            </div>
+          </div>
+          <div class="arcade-controls">
+            <button class="arcade-button red">L</button>
+            <button class="arcade-button green"></button>
+            <button class="arcade-button blue">R</button>
+            <div class="arcade-joystick"></div>
+          </div>
+        </section>
 
-        <div class="container">
+        <section class="about-me">
+          <div class="profile">
+            <img src="../images/me.png" alt="My photo" class="profile-photo" />
+            <h1 class="profile-name">João Silva</h1>
+            <p class="slide current">
+              Hi there, I'm João, a 22-year-old living in Marco de Canaveses,
+              Porto. <br />
+              I'm deeply passionate about game design, sports, and programming.
+              <br />
+              I hold a Master's Degree in Informatics Engineering from FEUP.
+              <br />
+              If you share the same love for games as I do, why not have some
+              fun playing Space Invaders on my arcade console? <br />
+              Alternatively, you can explore some of the projects i did during
+              my university time!
+            </p>
+            <p class="slide">
+              I have a strong passion for psychology, which inspired my master's
+              thesis project: a serious game called Emotion Odyssey. This game
+              helps adolescents and their parents understand emotions and learn
+              effective emotion regulation strategies. The project involved
+              collaboration with adolescents, parents, and psychologists through
+              interviews and questionnaires to ensure the game met their needs.
+              Created in Unity2D, you can see a glimpse of it in the following
+              slide, featuring a video trailer.
+            </p>
+            <video
+              class="slide"
+              width="640"
+              height="360"
+              controls
+              autoplay
+              muted
+              poster="images/GameLogo(2).png"
+            >
+              <source src="videos/EmotionOdysseyTrailer.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <!-- Navigation buttons -->
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
 
-
-            <section class="arcade-console">
-                <div class="arcade-screen">
-                    <!-- Space invaders game -->
-                    <canvas id="game"></canvas> 
-                    <div class="options">
-                        <button class="option play">Play</button>
-                        <a href="https://github.com/SilvaFeup" target="_blank">
-                            <button class="option projects">Projects</button>
-                        </a>
-                    </div>
-                </div>
-                    <div class="arcade-controls">
-                        <button class="arcade-button red">L</button>
-                        <button class="arcade-button green"></button>
-                        <button class="arcade-button blue">R</button>
-                    <div class="arcade-joystick"></div>
-                </div>
-            </section>
-
-            <section class="about-me">
-                <div class="profile">
-                    <img src="../images/me.png" alt="My photo" class="profile-photo">
-                    <h1 class="profile-name">João Silva</h1>
-                    <p class="profile-intro">
-                        Hi there, I'm João, a 21-year-old living in Marco de Canavezes, Porto. <br>
-                        I'm deeply passionate about game design, sports, and programming. <br>
-                        I hold a degree in Informatics Engineering from FEUP and I'm currently pursuing a Master's degree. <br>
-                        If you share the same love for games as I do, why not have some fun playing Space Invaders on my arcade console? <br>
-                        Alternatively, you can explore my past and ongoing projects to see what I've been working on!
-                    </p>
-                    
-                </div>
-            </section>
-
-
-        </div>
-          
-        
+          <!-- Circles/Indicators -->
+          <div class="indicator-container">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+      </div>
     </main>
-	
   </body>
 </html>
-  
