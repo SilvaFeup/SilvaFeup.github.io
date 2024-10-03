@@ -218,61 +218,64 @@ canvas {
 /* Media queries for mobile responsiveness */
 @media screen and (max-width: 600px) {
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 30em 1fr;
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: auto; /* Adjusted for responsiveness */
+    height: auto; /* Allow height to be dynamic */
   }
 
   .arcade-console {
     border: 5px solid rgb(255, 255, 0);
     border-radius: 10px;
     box-shadow: inset 0 0 10px rgb(255, 255, 0);
+    padding: 10px; /* Add padding for better spacing */
   }
 
   .arcade-screen {
-    width: 90%;
-    height: 60%;
+    width: 90%; /* Responsive width */
+    height: 50%; /* Adjust height for better fit */
     border: 3px solid rgb(255, 255, 0);
     border-radius: 8px;
   }
 
   .arcade-controls {
     width: 90%;
-    height: 15%;
+    height: auto; /* Adjust height for better fit */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
   }
 
   .arcade-button {
-    margin-top: 2em;
-    width: 30px;
-    height: 30px;
+    margin: 1em; /* Add margin for spacing */
+    width: 40px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
   }
 
   .arcade-joystick {
-    margin-top: 2em;
-    width: 45px;
-    height: 45px;
+    margin: 1em; /* Add margin for spacing */
+    width: 60px; /* Adjust joystick size */
+    height: 60px; /* Adjust joystick size */
   }
 
   .profile-photo {
     margin-top: 1em;
-    width: 150px;
-    height: 150px;
+    width: 150px; /* Responsive size */
+    height: 150px; /* Responsive size */
   }
 
   .profile-name {
-    font-size: 24px;
+    font-size: 24px; /* Responsive font size */
   }
 
   .slide {
-    padding-left: 1em;
-    padding-right: 1em;
-    font-size: 16px;
-    line-height: 2.5em;
+    padding: 0 1em; /* Add padding for text */
+    font-size: 16px; /* Responsive font size */
+    line-height: 2.5em; /* Adjust line height for better readability */
   }
 
   .option {
-    width: 150px;
-    height: 40px;
-    font-size: 18px;
+    width: 150px; /* Adjust width for better fit */
+    height: 40px; /* Adjust height for better fit */
+    font-size: 18px; /* Responsive font size */
+    margin: 0.5em 0; /* Add vertical margin for spacing */
   }
 
   /* Adjusting the buttons for mobile */
