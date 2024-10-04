@@ -220,6 +220,7 @@ canvas {
   .container {
     grid-template-columns: 1fr; /* Single column layout */
     grid-template-rows: auto; /* Adjusted for responsiveness */
+    height: auto; /* Allow height to be dynamic */
   }
 
   .arcade-console {
