@@ -207,12 +207,6 @@ button:hover {
   background-color: #333;
 }
 
-video {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Prevents any additional space below the video */
-}
-
 /*Canvas styling*/
 
 canvas {
@@ -310,11 +304,5 @@ canvas {
     height: 8px; /* Adjust dot size */
     width: 8px; /* Adjust dot size */
     margin: 0 3px; /* Adjust margin */
-  }
-
-  video {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Prevents any additional space below the video */
   }
 }
